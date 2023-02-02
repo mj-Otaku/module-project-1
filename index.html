@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="board">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSOR</h1>
+      </div>
+      <div class="score-board">
+        <p>YourPoints</p>
+        <div class="point">0</div>
+      </div>
+    </div>
+    <div class="main-game">
+      <div>
+        <button class="scissor style" onclick="on('scissor')">
+          <img src="scissor.png" alt="" />
+        </button>
+        <button class="rock style" onclick="on('rock')">
+          <img src="rock.png" alt="" />
+        </button>
+      </div>
+      <img src="line.png" alt="" class="line img1" />
+      <img src="line.png" alt="" class="line img2" />
+      <img src="line.png" alt="" class="line img3" />
+      <div>
+        <button class="paper style" onclick="on('paper')">
+          <img src="paper.png" alt="" />
+        </button>
+      </div>
+      <button class="RESET" onclick="RESET()">
+        <p style="color: black">RESET POINTs</p>
+      </button>
+    </div>
+
+    <button id="myBtn">RULES..</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <ol>
+          <li>Rock wins scissors, scissors wins paper, and paper wins rock.</li>
+          <li>
+            Make decision weather u gonna play "rock ,scissor,paper" before u
+            click them.
+          </li>
+          <li>If both players lay down the same hand, its a tie.</li>
+        </ol>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
